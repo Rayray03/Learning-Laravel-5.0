@@ -1,0 +1,48 @@
+[2018-01-31 19:47:09] local.ERROR: exception 'ErrorException' with message 'mcrypt_encrypt(): Size of key is too large for this algorithm' in /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php:11823
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'mcrypt_encrypt(...', '/var/www/html/d...', 11823, Array)
+#1 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(11823): mcrypt_encrypt('rijndael-128', 'base64:GmSfkG5e...', 's:40:"G5rl79VTA...', 'cbc', '??????=?q#:???...')
+#2 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(11816): Illuminate\Encryption\Encrypter->padAndMcrypt('G5rl79VTAQISMFF...', '??????=?q#:???...')
+#3 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(11766): Illuminate\Encryption\Encrypter->encrypt('G5rl79VTAQISMFF...')
+#4 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(11738): Illuminate\Cookie\Middleware\EncryptCookies->encrypt(Object(Illuminate\Http\Response))
+#5 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(8944): Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#6 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(2478): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#7 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(8944): Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#8 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#9 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(8935): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#10 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(1891): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#11 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(1880): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#12 /var/www/html/dev2.eng.mcmaster.ca/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}  
+[2018-01-31 19:47:35] local.ERROR: exception 'ErrorException' with message 'mcrypt_encrypt(): Size of key is too large for this algorithm' in /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php:11823
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'mcrypt_encrypt(...', '/var/www/html/d...', 11823, Array)
+#1 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(11823): mcrypt_encrypt('rijndael-128', 'base64:GmSfkG5e...', 's:40:"OdtCiQ3DJ...', 'cbc', '??=W????????e.+...')
+#2 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(11816): Illuminate\Encryption\Encrypter->padAndMcrypt('OdtCiQ3DJHSQKsb...', '??=W????????e.+...')
+#3 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(11766): Illuminate\Encryption\Encrypter->encrypt('OdtCiQ3DJHSQKsb...')
+#4 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(11738): Illuminate\Cookie\Middleware\EncryptCookies->encrypt(Object(Illuminate\Http\Response))
+#5 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(8944): Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#6 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(2478): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#7 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(8944): Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#8 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#9 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(8935): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#10 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(1891): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#11 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(1880): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#12 /var/www/html/dev2.eng.mcmaster.ca/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}  
+[2018-01-31 19:47:46] local.ERROR: exception 'ErrorException' with message 'mcrypt_encrypt(): Size of key is too large for this algorithm' in /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php:11823
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'mcrypt_encrypt(...', '/var/www/html/d...', 11823, Array)
+#1 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(11823): mcrypt_encrypt('rijndael-128', 'base64:GmSfkG5e...', 's:40:"NOYUBkbZZ...', 'cbc', 'k??n????gcPU??...')
+#2 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(11816): Illuminate\Encryption\Encrypter->padAndMcrypt('NOYUBkbZZfzi0u4...', 'k??n????gcPU??...')
+#3 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(11766): Illuminate\Encryption\Encrypter->encrypt('NOYUBkbZZfzi0u4...')
+#4 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(11738): Illuminate\Cookie\Middleware\EncryptCookies->encrypt(Object(Illuminate\Http\Response))
+#5 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(8944): Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#6 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(2478): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#7 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(8944): Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#8 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#9 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(8935): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#10 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(1891): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#11 /var/www/html/dev2.eng.mcmaster.ca/vendor/compiled.php(1880): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#12 /var/www/html/dev2.eng.mcmaster.ca/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}  

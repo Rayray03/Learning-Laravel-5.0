@@ -1,0 +1,64 @@
+<?php $__env->startSection('content'); ?>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="panel panel-default">
+        <div class="panel-heading">Comments Manager</div>
+
+        <div class="panel-body">
+
+        <table class="table table-striped">
+          <tr class="row">
+            <th class="col-lg-4">Content</th>
+            <th class="col-lg-2">User</th>
+            <th class="col-lg-4">Page</th>
+            <th class="col-lg-1"></th>
+            <th class="col-lg-1"></th>
+          </tr>
+          <?php foreach($comments as $comment): ?>
+          <tr class="row">
+              <td class="col-lg-6">
+                <?php echo e($comment->content); ?>
+
+              </td>
+          
+              <td class="col-lg-2">
+                <?php if($comment->website): ?>
+                  <a href="<?php echo e($comment->website); ?>">
+                    <?php echo e($comment->nickname); ?>
+
+                  </a>
+                <?php else: ?>
+                  <?php echo e($comment->nickname); ?>
+
+                <?php endif; ?>
+                <?php echo e($comment->email); ?>
+
+              </td>
+              </td>
+              <td class="col-lg-4">
+                <a href="<?php echo e(URL('pages/'.$comment->page_id)); ?>" target="_blank">
+                  <?php echo e(App\Page::find($comment->page_id)->title); ?>
+
+                </a>
+              </td>
+              <td class="col-lg-1">
+                <a href="<?php echo e(URL('admin/comments/'.$comment->id.'/edit')); ?>" class="btn btn-success">Edit</a>
+              </td>
+              <td class="col-lg-1">
+                <form action="<?php echo e(URL('admin/comments/'.$comment->id)); ?>" method="POST" style="display: inline;">
+                  <input name="_method" type="hidden" value="DELETE">
+                  <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
+                  <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+              </td>
+          </tr>
+          <?php endforeach; ?>
+        </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
